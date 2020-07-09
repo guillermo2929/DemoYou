@@ -1,0 +1,107 @@
+
+/* 1. Base */
+body{
+	background-color: #148690;
+	background-image: linear-gradient(to bottom right, #F72914, #ECF91C, #1CF36D);
+	color: #fff;
+	font-family: "Quicksand", 'Lucida Calligraphy';
+	font-size: 22px;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	line-height: 1.5;
+	min-height: 100vh;
+	min-width: 300px;
+	overflow-x: hidden;
+	text-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* 2. Shared */
+.wallpaper,
+.picture-shadow,
+.picture-image {
+	display: block;
+	height: 100%;
+	left: 0;
+	top: 0;
+	width: 100%;
+}
+
+.job,
+.button {
+font-family: "Montserrat", "Quicksand", sans-serif;
+letter-spacing: 0.3em;
+text-transform: uppercase;
+}
+
+/* 3. Specific */
+.wallpaper {
+	background-image: url("../images/woman.jpg");
+	background-position: center;
+	background-size: cover;
+	opacity: 0.2;
+	position: fixed;
+
+	
+}
+
+.job {
+	color: #ffe479;
+	font-size: 0.75rem;
+}
+
+.picture {
+	padding-top: 100%;
+	position: relative;
+	width: 100%;
+}
+
+.picture-shadow {
+	border-radius: 29945px;
+	background-image: radial-gradient(#000 0%, rgba(0, 0, 0, 0) 50%);
+	position: absolute;
+	top: 20%;
+}
+
+.picture-image {
+	border-radius: 29945px;
+	position: absolute;
+}
+
+@media screen and (max-width: 799px) {
+	.content {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 5rem 3rem;
+	}
+
+	.side {
+		margin-bottom: 3rem;
+		width: 100%;
+	}
+
+}
+
+@media screen and (min-width: 800px){
+	.content{
+		align-items: center;
+		justify-content: space-around;
+		justify-content: space-evenly;
+		padding: 4rem;
+	}
+
+	.side{
+		flex-grow: 0;
+		flex-shrink: 0;
+		height: 20rem;
+		order: 2;
+		width: 20rem;
+	}
+
+	.about{
+		flex-grow: 1;
+		flex-shrink: 1;
+	}
+}
+
+
